@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bank
+    username: jeanlouis
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # or create, create-drop, validate depending on your use case
+    show-sql: true
+    properties:
+      hibernate:
+              envers:
+                enabled: true
+
